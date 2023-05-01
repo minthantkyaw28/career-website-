@@ -43,13 +43,25 @@
   </style>
 <body>
 
+ {% include 'nav.html' %}
 <div class="container">
-
    <h1 class="text-center">Career Site</h1>
   <img class="img-fluid" src="../static/career.jpg" alt="" height="300px">
 
-  <h2  class="text-center" class="mt-5">About The Site</h2>
+
+    <h2  class="text-center" class="mt-5 mb-5">About The Site</h2>
+  <div class="row">
+
+  <div class="col-6">
+    
+
   <p  class="text-center lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+    <div class="col-6">
+   <img src="./static/people_working.jpg" height="320px" style="border-radius:10px;">
+  </div>
+  </div>
 
   <br>
 
@@ -63,11 +75,13 @@
  
   <div  class="text-center">
     <button class="btn btn-primary">Contact Us</button>
-    <p class="mt-5">Copyright 2023, MTK</p>
+    <!-- <p class="mt-5">Copyright 2023, MTK</p> -->
   </div>
   
   
 </div>
+
+  {% include 'footer.html' %}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
